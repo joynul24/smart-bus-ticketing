@@ -1,0 +1,11 @@
+.primary-color {
+    color: #1DD100;
+}
+
+.bg-primary {
+    background-color: #1DD100;
+}
+
+.hover-primary-color:hover {
+    color: #1DD100;
+}

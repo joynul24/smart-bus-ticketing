@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Ticket </title>
+    <!-- Main Index file -->
+     <link rel="stylesheet" href="index.css">
+    <!-- Tailwind and DaisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- FontAwesome CDN -->
+    <script src="https://kit.fontawesome.com/44c614560c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <!-- Navber -->
+    <nav class="max-w-6xl mx-auto flex items-center justify-between py-6 px-4">
+  <!-- Logo -->
+  <div>
+    <h2 class="text-2xl md:text-4xl font-extrabold">GoTicket</h2>
+  </div>
+
+  <!-- Hamburger (mobile only) -->
+  <div class="md:hidden">
+    <button id="menu-btn" class="text-2xl focus:outline-none">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- nav items -->
+  <div id="menu" class="hidden md:flex items-center gap-8 text-gray-600">
+    <a href="#" class="hover-primary-color transition">Home</a>
+    <a href="#" class="hover-primary-color transition">About</a>
+    <a href="#" class="hover-primary-color transition">Destination</a>
+    <a href="#" class="hover-primary-color transition">Search</a>
+  </div>
+
+  <!-- nav end -->
+  <div class="hidden md:block">
+    <button class="btn btn-ghost primary-color rounded-lg border-[#1DD100]">
+      Bus <i class="fa-solid fa-bus"></i>
+    </button>
+  </div>
+</nav>
+  </header>
+
+
+</body>
+
+</html>
