@@ -9,3 +9,15 @@
 .hover-primary-color:hover {
     color: #1DD100;
 }
+
+.container{
+    max-width: 1171px;
+    margin: 0 auto;
+}
+
+.banner-img{
+    background-image: url("./images/banner-2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
