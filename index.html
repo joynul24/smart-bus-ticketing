@@ -129,7 +129,7 @@
             </div>
             <img class="h-full" src="./images/cupon-devider.png" alt="">
             <div>
-            <h3 class="text-3xl font-bold mb-3">NEW15</h3>
+            <h3 class="text-3xl font-bold mb-3 font-raleway">NEW15</h3>
             <p>Coupon Code</p>
             </div>
            </div>
@@ -173,8 +173,8 @@
              <button class="btn bg-[#1dd10026] primary-color font-inter btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl"><img src="./images/seat-green.png" alt=""><span>40</span> Seats left</button>
             </div>
             <div class="mt-6 bg-[#f7f8f8] rounded-2xl">
-              <button class="btn btn-ghost w-full flex justify-between"><p>Route</p><p>Dhaka-Sylhet</p></button>
-              <button class="btn btn-ghost w-full flex justify-between mt-3"><p>Departure Time</p><p>9:00 PM</p></button>
+              <button class="btn btn-ghost w-full flex justify-between my-2"><p>Route</p><p>Dhaka-Sylhet</p></button>
+              <button class="btn btn-ghost w-full flex justify-between mt-3 mb-3"><p>Departure Time</p><p>9:00 PM</p></button>
               <div class="grid md:grid-cols-3 gap-3">
                 <button class="btn btn-ghost">Boarding Point - Laxmipur</button>
                 <button class="btn btn-ghost">Boarding Point - Sylhet</button>
@@ -185,15 +185,82 @@
            <!-- 2 -->
             <img class="h-full hidden md:block" src="./images/info-devider.png" alt="">
            <!-- 3 -->
-            <div class="border flex-1">
+            <div class="flex flex-col justify-center items-center flex-1 mt-5 md:mt-0">
               <img src="./images/fare.png" alt="">
-              <h3>550 Taka</h3>
-              <p>Per Seat</p>
+              <h3 class="font-raleway md:text-2xl font-bold">550 Taka</h3>
+              <p class="font-inter font-semibold text-gray-600">Per Seat</p>
             </div>
         </div>
         <!-- Ticket Booking -->
          <div></div>
      </section>
+
+     <!-- Booking Seat Grids -->
+      <section class="bg-[#f7f8f8]">
+         <div class="container border grid grid-cols-1 md:grid-cols-3 p-3 md:p-8 gap-7">
+          <!-- Seat Buttons -->
+         <div class="col-span-2">
+            <h2 class="md:text-2xl font-bold font-raleway">Select Your Seat</h2>
+            <div class="border-t-2 border-b-2 py-2 border-dashed border-gray-400 my-10 font-medium font-inter flex justify-between items-center">
+              <p class="flex items-center gap-2"><img src="./images/seat-gray.png" alt="">Available</p>
+              <p class="flex items-center gap-2"><img src="./images/seat-green.png" alt="">Selected</p>
+            </div>
+            <div class="flex justify-between items-center my-6">
+              <p></p>
+              <button class="btn btn-ghost bg-gray-400"><img src="./images/tabler-icon-steering-wheel.png" alt=""></button>
+            </div>
+        <!-- Seat Buttons -->
+        <div class="grid grid-cols-6 gap-4 md:gap-8">
+           <!-- seat category -->
+            <div class="flex flex-col gap-3 md:gap-6">
+              <button class="btn w-0">A</button>
+              <button class="btn w-0">B</button>
+              <button class="btn w-0">C</button>
+              <button class="btn w-0">D</button>
+              <button class="btn w-0">E</button>
+            </div>
+            <!-- 1 serial btn -->
+             <div class="flex flex-col gap-3 md:gap-6">
+               <button class="btn btn-active">A1</button>
+               <button class="btn btn-active">B1</button>
+               <button class="btn btn-active">C1</button>
+               <button class="btn btn-active">D1</button>
+               <button class="btn btn-active">E1</button>
+             </div>
+            <!-- 2 serial btn -->
+             <div class="flex flex-col gap-3 md:gap-6">
+               <button class="btn btn-active">A2</button>
+               <button class="btn btn-active">B2</button>
+               <button class="btn btn-active">C2</button>
+               <button class="btn btn-active">D2</button>
+               <button class="btn btn-active">E2</button>
+             </div>
+             <!-- Emty Seat -->
+              <div></div>
+              <!-- 3 serial btn -->
+             <div class="flex flex-col gap-3 md:gap-6">
+               <button class="btn btn-active">A3</button>
+               <button class="btn btn-active">B3</button>
+               <button class="btn btn-active">C3</button>
+               <button class="btn btn-active">D3</button>
+               <button class="btn btn-active">E3</button>
+             </div>
+              <!-- 4 serial btn -->
+             <div class="flex flex-col gap-3 md:gap-6">
+               <button class="btn btn-active">A4</button>
+               <button class="btn btn-active">B4</button>
+               <button class="btn btn-active">C4</button>
+               <button class="btn btn-active">D4</button>
+               <button class="btn btn-active">E4</button>
+             </div>
+        </div>
+         </div>
+        <!-- Seat Show Section -->
+         <div class="col-span-1 border-red-500 border">
+          <h2 class="md:text-2xl font-bold font-raleway">Select Your Seat</h2>
+         </div>
+         </div>
+      </section>
 
   </main>
 
