@@ -60,7 +60,7 @@
   <div class="relative z-50 text-white px-4 sm:px-6">
     <h1 class="leading-tight font-raleway text-2xl sm:text-3xl md:text-5xl font-bold mb-2 sm:mb-4">End-to-End Travel with <br> <span class="primary-color">Joy Paribahan</span></h1>
     <p class="font-inter max-w-2xl text-center text-sm sm:text-base md:text-xl mb-4 sm:mb-6">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
-    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl bg-[#1DD100] text-black font-semibold px-4 sm:px-6 py-2 sm:py-3 rounded-lg hover:bg-green-600 transition border-none">Buy Tickets</button>
+    <button class="btn bg-[#1DD100] text-black font-semibold rounded-lg hover:bg-green-600 transition border-none">Buy Tickets</button>
   </div>
     </div>
    <!-- banner Statistics cards -->
@@ -170,7 +170,7 @@
                 <p class="text-gray-600 font-inter text-sm md:text-normal">Coach-0090-WEB ! AC_Businass</p>
               </div>
              </div>
-             <button class="btn bg-[#1dd10026] primary-color font-inter btn-xs sm:btn-sm md:btn-md lg:btn-lg xl:btn-xl"><img src="./images/seat-green.png" alt=""><span>40</span> Seats left</button>
+             <button class="btn bg-[#1dd10026] primary-color font-inter"><img src="./images/seat-green.png" alt=""><span>40</span> Seats left</button>
             </div>
             <div class="mt-6 bg-[#f7f8f8] rounded-2xl">
               <button class="btn btn-ghost w-full flex justify-between my-2"><p>Route</p><p>Dhaka-Sylhet</p></button>
@@ -197,9 +197,9 @@
 
      <!-- Booking Seat Grids -->
       <section class="bg-[#f7f8f8]">
-         <div class="container border grid grid-cols-1 md:grid-cols-3 p-3 md:p-8 gap-7">
+         <div class="container bg-white grid grid-cols-1 md:grid-cols-3 p-3 md:p-8 gap-4">
           <!-- Seat Buttons -->
-         <div class="col-span-2">
+         <div class="col-span-2 md:border-r-2 md:border-dashed md:border-[#1DD100] md:pr-8">
             <h2 class="md:text-2xl font-bold font-raleway">Select Your Seat</h2>
             <div class="border-t-2 border-b-2 py-2 border-dashed border-gray-400 my-10 font-medium font-inter flex justify-between items-center">
               <p class="flex items-center gap-2"><img src="./images/seat-gray.png" alt="">Available</p>
@@ -207,10 +207,10 @@
             </div>
             <div class="flex justify-between items-center my-6">
               <p></p>
-              <button class="btn btn-ghost bg-gray-400"><img src="./images/tabler-icon-steering-wheel.png" alt=""></button>
+              <button class="btn btn-ghost bg-gray-300"><img src="./images/tabler-icon-steering-wheel.png" alt=""></button>
             </div>
         <!-- Seat Buttons -->
-        <div class="grid grid-cols-6 gap-4 md:gap-8">
+        <div class="grid grid-cols-6 gap-4 md:gap-8 font-inter">
            <!-- seat category -->
             <div class="flex flex-col gap-3 md:gap-6">
               <button class="btn w-0">A</button>
@@ -256,8 +256,30 @@
         </div>
          </div>
         <!-- Seat Show Section -->
-         <div class="col-span-1 border-red-500 border">
+         <div class="col-span-1">
           <h2 class="md:text-2xl font-bold font-raleway">Select Your Seat</h2>
+          <!-- show select btn field -->
+           <div class="bg-[#f7f8f8] p-5 mt-5 rounded-xl font-inter">
+            <div class="flex justify-between border-b-2 pb-3 border-dashed border-gray-400">
+            <p class="text-xl font-medium">Seat<sup class="bg-primary p-1 rounded-full">0</sup></p>
+            <p class="text-xl font-medium">Class</p>
+            <p class="text-xl font-medium">Price</p>
+           </div>
+            <!-- Seat List Container -->
+              <ul id="seat-list-container" class="">
+              <p id="no-seat-booked" class="text-center my-4 md:text-xl font-medium text-red-400">No Seat Booked</p>
+            </ul>
+            <!-- Total Price -->
+            <div class="flex items-center justify-between space-y-4">
+              <p class="font-bold">Total Price</p>
+              <p>BDT <span id="total-price">***</span></p>
+            </div>
+            <!-- Coupon Button -->
+             <div class="flex items-center justify-between bg-white p-2 rounded-xl mt-3 mb-5">
+               <input class="p-1 outline-none border-none w-4/5" type="text" placeholder="Have any copupon?">
+               <button class="btn bg-primary text-white rounded-lg border-0">Apply</button>
+             </div>
+           </div>
          </div>
          </div>
       </section>
