@@ -191,14 +191,12 @@
               <p class="font-inter font-semibold text-gray-600">Per Seat</p>
             </div>
         </div>
-        <!-- Ticket Booking -->
-         <div></div>
      </section>
 
      <!-- Booking Seat Grids -->
       <section class="bg-[#f7f8f8]">
          <div class="container bg-white grid grid-cols-1 md:grid-cols-3 p-3 md:p-8 gap-4">
-          <!-- Seat Buttons -->
+          <!-- Seat ALL Buttons -->
          <div class="col-span-2 md:border-r-2 md:border-dashed md:border-[#1DD100] md:pr-8">
             <h2 class="md:text-2xl font-bold font-raleway">Select Your Seat</h2>
             <div class="border-t-2 border-b-2 py-2 border-dashed border-gray-400 my-10 font-medium font-inter flex justify-between items-center">
@@ -218,40 +216,45 @@
               <button class="btn w-0">C</button>
               <button class="btn w-0">D</button>
               <button class="btn w-0">E</button>
+              <button class="btn w-0">E</button>
             </div>
             <!-- 1 serial btn -->
              <div class="flex flex-col gap-3 md:gap-6">
-               <button class="btn btn-active">A1</button>
-               <button class="btn btn-active">B1</button>
-               <button class="btn btn-active">C1</button>
-               <button class="btn btn-active">D1</button>
-               <button class="btn btn-active">E1</button>
+               <button class="btn btn-active seat-btn rounded-xl border-none">A1</button>
+               <button class="btn btn-active seat-btn rounded-xl border-none">B1</button>
+               <button class="btn btn-active seat-btn rounded-xl border-none">C1</button>
+               <button class="btn btn-active seat-btn rounded-xl border-none">D1</button>
+               <button class="btn btn-active seat-btn rounded-xl border-none">E1</button>
+               <button class="btn btn-active seat-btn rounded-xl border-none">F1</button>
              </div>
             <!-- 2 serial btn -->
              <div class="flex flex-col gap-3 md:gap-6">
-               <button class="btn btn-active">A2</button>
-               <button class="btn btn-active">B2</button>
-               <button class="btn btn-active">C2</button>
-               <button class="btn btn-active">D2</button>
-               <button class="btn btn-active">E2</button>
+               <button class="btn btn-active seat-btn rounded-xl border-none">A2</button>
+               <button class="btn btn-active seat-btn rounded-xl border-none">B2</button>
+               <button class="btn btn-active seat-btn rounded-xl border-none">C2</button>
+               <button class="btn btn-active seat-btn rounded-xl border-none">D2</button>
+               <button class="btn btn-active seat-btn rounded-xl border-none">E2</button>
+               <button class="btn btn-active seat-btn rounded-xl border-none">F2</button>
              </div>
              <!-- Emty Seat -->
               <div></div>
               <!-- 3 serial btn -->
              <div class="flex flex-col gap-3 md:gap-6">
-               <button class="btn btn-active">A3</button>
-               <button class="btn btn-active">B3</button>
-               <button class="btn btn-active">C3</button>
-               <button class="btn btn-active">D3</button>
-               <button class="btn btn-active">E3</button>
+               <button class="btn btn-active seat-btn rounded-xl border-none">A3</button>
+               <button class="btn btn-active seat-btn rounded-xl border-none">B3</button>
+               <button class="btn btn-active seat-btn rounded-xl border-none">C3</button>
+               <button class="btn btn-active seat-btn rounded-xl border-none">D3</button>
+               <button class="btn btn-active seat-btn rounded-xl border-none">E3</button>
+               <button class="btn btn-active seat-btn rounded-xl border-none">F3</button>
              </div>
               <!-- 4 serial btn -->
              <div class="flex flex-col gap-3 md:gap-6">
-               <button class="btn btn-active">A4</button>
-               <button class="btn btn-active">B4</button>
-               <button class="btn btn-active">C4</button>
-               <button class="btn btn-active">D4</button>
-               <button class="btn btn-active">E4</button>
+               <button class="btn btn-active seat-btn rounded-xl border-none">A4</button>
+               <button class="btn btn-active seat-btn rounded-xl border-none">B4</button>
+               <button class="btn btn-active seat-btn rounded-xl border-none">C4</button>
+               <button class="btn btn-active seat-btn rounded-xl border-none">D4</button>
+               <button class="btn btn-active seat-btn rounded-xl border-none">E4</button>
+               <button class="btn btn-active seat-btn rounded-xl border-none">F4</button>
              </div>
         </div>
          </div>
@@ -270,7 +273,7 @@
               <p id="no-seat-booked" class="text-center my-4 md:text-xl font-medium text-red-400">No Seat Booked</p>
             </ul>
             <!-- Total Price -->
-            <div class="flex items-center justify-between space-y-4">
+            <div class="flex  justify-between space-y-4">
               <p class="font-bold">Total Price</p>
               <p>BDT <span id="total-price">***</span></p>
             </div>
@@ -279,7 +282,24 @@
                <input class="p-1 outline-none border-none w-4/5" type="text" placeholder="Have any copupon?">
                <button class="btn bg-primary text-white rounded-lg border-0">Apply</button>
              </div>
+             <!-- Grand Total Price -->
+              <div class="flex  justify-between space-y-4">
+              <p class="font-bold">Grand Total</p>
+              <p>BDT <span id="total-price">***</span></p>
+            </div>
            </div>
+           <!-- Form Section -->
+          <div class="card-body">
+          <fieldset class="fieldset">
+          <label class="label font-bold text-black font-inter">Passenger Name*</label>
+          <input type="text" class="input w-full" placeholder="Enter your name" />
+          <label class="label font-bold text-black font-inter">Phone Number*</label>
+          <input type="text" class="input w-full" placeholder="Your phone" />
+          <label class="label font-bold text-black font-inter">Email ID</label>
+          <input type="email" class="input w-full" placeholder="Your email" />
+          <button class="btn bg-primary border-none text-white mt-4">Next</button>
+        </fieldset>
+        </div>
          </div>
          </div>
       </section>

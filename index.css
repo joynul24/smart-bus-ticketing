@@ -31,3 +31,8 @@
     background-position: center;
     background-size: cover;
 }
+
+.seat-btn:hover{
+    background-color: black;
+    color: white;
+}
