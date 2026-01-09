@@ -7,6 +7,10 @@ const couponField = document.getElementById("coupon-field");
 const grandTotal = document.getElementById("grand-total");
 const couponInput = document.getElementById("coupon-input");
 const applyCouponBtn = document.getElementById("apply-coupon-btn");
+const inputNumber = document.getElementById("input-number");
+const nextBtn = document.getElementById("next-btn");
+const passengerName = document.getElementById("passenger-name");
+const passengerEmail = document.getElementById("passenger-email");
 
 let selectSeats = [];
 
@@ -71,7 +75,7 @@ applyCouponBtn.addEventListener("click", function () {
     } else if (enteredCoupon === "Couple 20") {
         discount = currentPrice * 0.20;
     } else {
-        alert("Invalid coupon code!"); 
+        alert("Invalid coupon code!");
         return;
     };
 
@@ -80,4 +84,33 @@ applyCouponBtn.addEventListener("click", function () {
 
     couponInput.value = "";
     couponField.classList.add("hidden");
+});
+
+
+// Input validation for phone number
+inputNumber.addEventListener("input", function () {
+    if (inputNumber.value.trim().length === 11) {
+        nextBtn.disabled = false;
+        nextBtn.classList.remove("bg-gray-400", "cursor-not-allowed");
+        nextBtn.classList.add("bg-primary", "hover:bg-primary-dark", "text-white");
+    } else {
+        nextBtn.disabled = true;
+        nextBtn.classList.add("cursor-not-allowed");
+        nextBtn.classList.remove("bg-primary", "hover:bg-primary-dark");
+    }
+});
+
+
+nextBtn.addEventListener("click", function () {
+    const modal = document.getElementById("confirmation-modal");
+    modal.classList.remove("hidden");
+    passengerName.value = "";
+    passengerEmail.value = "";
+    inputNumber.value = "";
+})
+
+
+document.getElementById("continue-btn").addEventListener("click", function () {
+    window.location.reload();
+    nextBtn.disabled = true;
 })

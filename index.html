@@ -60,7 +60,7 @@
   <div class="relative z-50 text-white px-4 sm:px-6">
     <h1 class="leading-tight font-raleway text-2xl sm:text-3xl md:text-5xl font-bold mb-2 sm:mb-4">End-to-End Travel with <br> <span class="primary-color">Joy Paribahan</span></h1>
     <p class="font-inter max-w-2xl text-center text-sm sm:text-base md:text-xl mb-4 sm:mb-6">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
-    <button class="btn bg-[#1DD100] text-black font-semibold rounded-lg hover:bg-green-600 transition border-none shadow-lg shadow-white">Buy Tickets</button>
+    <button onclick="document.getElementById('seat-booking-section').scrollIntoView({ behavior: 'smooth' })" class="btn bg-[#1DD100] text-black font-semibold rounded-lg hover:bg-green-600 transition border-none shadow-lg shadow-white">Buy Tickets</button>
   </div>
     </div>
    <!-- banner Statistics cards -->
@@ -194,7 +194,7 @@
      </section>
 
      <!-- Booking Seat Grids -->
-      <section class="bg-[#f7f8f8]">
+      <section id="seat-booking-section" class="bg-[#f7f8f8]">
          <div class="container bg-white grid grid-cols-1 md:grid-cols-3 p-3 md:p-8 gap-4">
           <!-- Seat ALL Buttons -->
          <div class="col-span-2 md:border-r-2 md:border-dashed md:border-[#1DD100] md:pr-8">
@@ -294,17 +294,46 @@
           <div class="card-body">
           <fieldset class="fieldset">
           <label class="label font-bold text-black font-inter">Passenger Name*</label>
-          <input type="text" class="input w-full" placeholder="Enter your name" />
+          <input id="passenger-name" type="text" class="input w-full" placeholder="Enter your name" />
           <label class="label font-bold text-black font-inter">Phone Number*</label>
-          <input type="text" class="input w-full" placeholder="Your phone" />
+          <input id="input-number" type="number" class="input w-full" placeholder="Your phone" />
           <label class="label font-bold text-black font-inter">Email ID</label>
-          <input type="email" class="input w-full" placeholder="Your email" />
-          <button class="btn bg-primary border-none text-white mt-4">Next</button>
+          <input id="passenger-email" type="email" class="input w-full" placeholder="Your email" />
+          <button disabled="disabled" id="next-btn" class="btn btn-active border-none mt-4">Next</button>
         </fieldset>
         </div>
          </div>
          </div>
       </section>
+
+     <!-- Modal Structure -->
+     <section>
+ <div id="confirmation-modal" class="hidden">
+  <div class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+    <div class="bg-white py-10 px-6 md:py-14 md:px-10 rounded-md shadow-md 
+                w-[90%] sm:w-[400px] md:w-[600px] lg:w-[700px] text-center"> 
+      <!-- Image -->
+      <div class="flex justify-center mb-7">
+        <img src="./images/success.png" alt="success" class="w-16 md:w-20 lg:w-24">
+      </div>
+      <!-- Title -->
+      <h2 class="text-xl md:text-2xl font-bold mb-4">SUCCESS</h2>
+      <!-- Message -->
+      <p class="mb-6 text-sm md:text-lg font-semibold text-gray-500">
+        Thank you for Booking Our Bus Seats. We are working hard to find the best service and deals for you.
+      </p>
+      <p class="mb-6 text-xs md:text-base text-gray-600">
+        Shortly you will find a confirmation in your email.
+      </p>
+      <!-- Continue Button -->
+      <button id="continue-btn" 
+              class="bg-primary btn text-white px-4 py-2 rounded-md w-full sm:w-auto">
+        Continue
+      </button>
+    </div>
+  </div>
+</div>
+</section>
 
   </main>
 
